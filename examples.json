@@ -1,0 +1,7 @@
+{
+  "Gridlock and atomic rescue": "# Every gross transfer is blocked, but the whole cycle nets to zero.\ncurrency HKD decimals 2;\naccount A HKD 10.00;\naccount B HKD 10.00;\naccount C HKD 10.00;\npay ab A -> B 15.00 HKD;\npay bc B -> C 15.00 HKD;\npay ca C -> A 15.00 HKD;\nsettle ab;\nsettle bc;\nsettle ca;\nnet rescue { ab, bc, ca };\nassert total HKD 30.00;",
+  "Find the feasible order": "# ab must wait for ba, despite being declared first.\ncurrency HKD decimals 2;\naccount A HKD 0.00;\naccount B HKD 20.00;\npay ab A -> B 12.00 HKD;\npay ba B -> A 15.00 HKD;\nsettle ab;\nsettle ba;\nsettle ab;\nassert total HKD 20.00;",
+  "Currency type error": "# The compiler rejects implicit currency conversion before execution.\ncurrency HKD decimals 2;\ncurrency USD decimals 2;\naccount HongKong HKD 100.00;\naccount NewYork USD 100.00;\npay cross HongKong -> NewYork 10.00 HKD;",
+  "Exact decimal accounting": "currency HKD decimals 2;\naccount A HKD 0.30;\naccount B HKD 0.00;\npay ten A -> B 0.10 HKD;\npay twenty A -> B 0.20 HKD;\nsettle ten;\nsettle twenty;\nassert total HKD 0.30;",
+  "Atomic rollback": "# One short participant blocks the entire batch.\ncurrency HKD decimals 2;\naccount A HKD 5.00;\naccount B HKD 0.00;\naccount C HKD 0.00;\npay ab A -> B 6.00 HKD;\npay bc B -> C 6.00 HKD;\nnet insufficient { ab, bc };\nassert total HKD 5.00;"
+}
