@@ -4,6 +4,8 @@ A small fintech DSL that makes settlement assumptions executable: currency-check
 
 ## Run
 
+Demo: https://youtu.be/XM0k7MYlBp0 (Unlisted, published 18 October 2026). Source: https://github.com/VivaanKandhari/ledgerlang . Eligibility question posted at https://syntax-summit.devpost.com/forum_topics/45585-eligibility-clarification-17-year-old-university-student ; organizer response is still needed before registration.
+
 Download `index.html` and `ledger.js` into one folder; open `index.html` in a modern browser. BigInt is required. No server, dependencies, credentials, model API or bank connection is needed. `node test.cjs` runs the checks, including an independent exhaustive-permutation oracle on 80 generated networks. `examples.json` provides sample programs for direct use with the compiler.
 
 ```javascript

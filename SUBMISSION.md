@@ -1,6 +1,12 @@
 # LedgerLang — possible Syntax Summit submission
 
-Status: built locally on 17 October 2026; not registered or submitted. Registration age wording still needs organizer clarification, checked again on 18 October. The 135-second demo is prepared at `../LedgerLang-demo.mp4`. Public source publication and demo upload await approval; neither is complete. The source passes all 12 checks, including comparison against an independent permutation oracle on 80 generated networks.
+Status: built locally on 17 October 2026; not registered or submitted. Source and demo published on 18 October with approval. Registration age wording still needs organizer clarification; the question has been posted. The source passes all 12 checks, including comparison against an independent permutation oracle on 80 generated networks.
+
+Repository: https://github.com/VivaanKandhari/ledgerlang
+
+Unlisted demo: https://youtu.be/XM0k7MYlBp0 (YouTube displays 2:16).
+
+Eligibility question: https://syntax-summit.devpost.com/forum_topics/45585-eligibility-clarification-17-year-old-university-student
 
 Solo entrant: Vivaan Kandhari.
 
