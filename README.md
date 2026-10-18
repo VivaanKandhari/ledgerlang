@@ -1,6 +1,6 @@
 # LedgerLang
 
-A small fintech DSL that makes settlement assumptions executable: currency-checked compilation, exact decimal money, atomic netting, and bounded gross-settlement reachability search. Built 17 October 2026 for a possible Syntax Summit entry. **Not registered or submitted**: the detailed rules say 16+, but the registration requires age of majority. Organizer clarification is pending; no false eligibility declaration has been made.
+A small fintech DSL that makes settlement assumptions executable: currency-checked compilation, exact decimal money, atomic netting, and bounded gross-settlement reachability search. 
 
 ## Run
 
@@ -55,4 +55,3 @@ The browser exports the source, typed intermediate representation, trace, final 
 
 This implementation combines a custom small language, located diagnostics, an auditable interpreter, and counterexample-oriented reachability exploration. Parsing, currency types, exact integer accounting, atomic netting and subset search are established techniques. No globally novel algorithm, production safety, banking integration or performance advantage is claimed. Credit, collateral, fees, arrival times, deadlines, legal settlement finality, FX and adversarial distributed systems are outside this model.
 
-The runnable implementation and documentation were prepared for Vivaan Kandhari's solo entry. No team members, user studies, external results or adoption claims are invented. Existing FlowForge source was not copied into this project.
